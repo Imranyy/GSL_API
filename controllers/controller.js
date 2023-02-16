@@ -21,7 +21,7 @@ const sendEmail=async(req,res)=>{
             User's name: ${name}
             Email Address: ${email}
             phone No: ${phone}
-            User location: https://gsl-api/api/location/${location}
+            User location: https://gsl-api.onrender.com/api/location/${location}
             ${message}
             `
         }
