@@ -17,11 +17,12 @@ const sendEmail=async(req,res)=>{
             from:process.env.TRANSPORTER,
             to:process.env.RECEIVEREMAIL,//receiver
             subject:`GSL Website: ${name}`,
-            text:`Name: ${name}
+            text:`
+            User's name: ${name}
             Email Address: ${email}
-            User location: https://gsl-api/api/location/${location}
             phone No: ${phone}
-            Message: ${message}
+            User location: https://gsl-api/api/location/${location}
+            ${message}
             `
         }
         mailTranporter.sendMail(details,(err)=>{
