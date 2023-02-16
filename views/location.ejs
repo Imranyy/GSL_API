@@ -6,9 +6,9 @@
     <title>GSL | Location</title>
 </head>
 <body>
-    <h2>The red marker on the map point on the user's location</h2>
-    <div class="location" style="display:flex; justify-content:center; align-items: center;">
-        <iframe style="height: 80vh; width: 90vw; margin: 8vh 0;" id="gmap_canvas" src='<%= map%>' frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+    <div class="location" style="font-family: monospace; display:flex; flex-direction: column; justify-content:center; align-items: center; margin: 2vh 0;">
+        <h2>The <span style="color: red;">red</span> marker on the map point on the user's location</h2>
+        <iframe style="height: 80vh; width: 90vw;" id="gmap_canvas" src='<%= map%>' frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
     </div>
 </body>
 </html>
